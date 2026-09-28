@@ -1,0 +1,30 @@
+== session A adopts the claimed copy ==
+exit=0
+spawned issue-7 harness=codex kind=ship mode=no-mistakes yolo=off window=firstmate:fm-issue-7 worktree=/private/var/folders/9v/wy94xzb539d3qcwkmzqnskrm0000gn/T/adopt-collide.AYRwbz/project/.claude/worktrees/issue-7
+
+== session B (separate firstmate home) tries the same copy ==
+exit=1
+warning: $CASE/home-b/data/issue-7b/launch-brief.md records no ship branch; defaulting to legacy branch fm/issue-7b
+warning: $CASE/home-b/data/issue-7b/launch-brief.md records no delivery contract line (scaffolded before ship briefs recorded one); launching on the explicit --mode no-mistakes - confirm its definition of done matches
+error: adopted worktree '/private/var/folders/9v/wy94xzb539d3qcwkmzqnskrm0000gn/T/adopt-collide.AYRwbz/project/.claude/worktrees/issue-7' is already claimed by task issue-7 (firstmate home $CASE/home-a); refusing to launch a second worker into its copy
+session B published a record: no
+
+== session B tries a symlinked spelling of the same copy ==
+exit=1
+warning: $CASE/home-b/data/issue-7b/launch-brief.md records no delivery contract line (scaffolded before ship briefs recorded one); launching on the explicit --mode no-mistakes - confirm its definition of done matches
+error: adopted worktree '/private/var/folders/9v/wy94xzb539d3qcwkmzqnskrm0000gn/T/adopt-collide.AYRwbz/project/.claude/worktrees/issue-7' is already claimed by task issue-7 (firstmate home $CASE/home-a); refusing to launch a second worker into its copy
+
+== adopting the project primary checkout instead of a worktree ==
+exit=1
+warning: $CASE/home-b/data/issue-7b/launch-brief.md records no delivery contract line (scaffolded before ship briefs recorded one); launching on the explicit --mode no-mistakes - confirm its definition of done matches
+error: --adopt-worktree did not yield an isolated worktree (resolved '/private/var/folders/9v/wy94xzb539d3qcwkmzqnskrm0000gn/T/adopt-collide.AYRwbz/project': it is the spawning project itself; worktree root '/private/var/folders/9v/wy94xzb539d3qcwkmzqnskrm0000gn/T/adopt-collide.AYRwbz/project'; spawning project '/var/folders/9v/wy94xzb539d3qcwkmzqnskrm0000gn/T/adopt-collide.AYRwbz/project'); refusing to launch to avoid tangling the primary checkout. Inspect target /private/var/folders/9v/wy94xzb539d3qcwkmzqnskrm0000gn/T/adopt-collide.AYRwbz/project
+
+== adopting a copy with uncommitted changes ==
+exit=1
+warning: $CASE/home-b/data/issue-7b/launch-brief.md records no delivery contract line (scaffolded before ship briefs recorded one); launching on the explicit --mode no-mistakes - confirm its definition of done matches
+error: adopted worktree '/private/var/folders/9v/wy94xzb539d3qcwkmzqnskrm0000gn/T/adopt-collide.AYRwbz/project/.claude/worktrees/issue-9' is not clean: it has uncommitted changes; refusing to discard uncommitted work and leaving the copy untouched
+
+== adopting a path that does not exist ==
+exit=1
+warning: $CASE/home-b/data/issue-7b/launch-brief.md records no delivery contract line (scaffolded before ship briefs recorded one); launching on the explicit --mode no-mistakes - confirm its definition of done matches
+error: adopted worktree '$CASE/nope' does not exist or is not a readable directory

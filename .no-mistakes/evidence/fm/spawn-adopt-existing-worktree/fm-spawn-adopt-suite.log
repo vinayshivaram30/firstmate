@@ -1,0 +1,12 @@
+ok - an adopted worktree is recorded and entered without a Treehouse pool allocation
+ok - an adopted path that is the primary checkout is refused exactly as a pooled one
+ok - an adopted copy another firstmate home holds is refused, however it is spelled or named
+ok - an adoption that aborts before publishing its record leaves the copy as it was handed over
+ok - an aborted adoption hands the copy back even when its own state-side clear fails
+ok - a copy's own wiring file survives adoption and teardown byte-identical
+ok - a refused adoption leaves the copy's own wiring file byte-identical
+ok - a redispatch onto a live adoption refuses instead of replacing the preserved originals
+ok - an adopted copy whose only deviation is a stale submodule pin is diagnosed as one
+ok - missing, foreign, subdirectory, pool-slot, recorded, dirty, and unlanded adopted paths are refused by name
+ok - --adopt-worktree is refused on relaunch and batch dispatch
+# all fm-spawn-adopt-worktree tests passed

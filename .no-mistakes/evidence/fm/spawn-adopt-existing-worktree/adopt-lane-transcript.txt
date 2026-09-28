@@ -1,0 +1,60 @@
+== captain claims the ticket the way offerline AGENTS.md mandates ==
+Preparing worktree (new branch 'issue-7')
+HEAD is now at fc013ba initial
+
+== the creator's own Claude settings already live in that copy ==
+{"creator":"mac-mini-captain"}
+
+== dispatch: fm-spawn.sh --adopt-worktree $CLAIM ==
+warning: $CASE/home/data/issue-7/launch-brief.md records no ship branch; defaulting to legacy branch fm/issue-7
+warning: $CASE/home/data/issue-7/launch-brief.md records no delivery contract line (scaffolded before ship briefs recorded one); launching on the explicit --mode no-mistakes - confirm its definition of done matches
+spawned issue-7 harness=codex kind=ship mode=no-mistakes yolo=off window=firstmate:fm-issue-7 worktree=/private/var/folders/9v/wy94xzb539d3qcwkmzqnskrm0000gn/T/adopt-lane.bncwjc/project/.claude/worktrees/issue-7
+spawn exit: 0
+
+== recorded task metadata ==
+window=firstmate:fm-issue-7
+endpoint_task_id=issue-7
+worktree=/private/var/folders/9v/wy94xzb539d3qcwkmzqnskrm0000gn/T/adopt-lane.bncwjc/project/.claude/worktrees/issue-7
+worktree_source=adopted
+project=/var/folders/9v/wy94xzb539d3qcwkmzqnskrm0000gn/T/adopt-lane.bncwjc/project
+harness=codex
+kind=ship
+mode=no-mistakes
+yolo=off
+branch=fm/issue-7
+tasktmp=/tmp/fm-issue-7
+model=default
+effort=default
+spawn_gen=s1790623800.47829.21069
+
+== owner claim written on the adopted copy ==
+task=issue-7
+home=$CASE/home
+
+== treehouse was never asked for a pool slot ==
+treehouse invocations: 0
+
+== creator's settings.local.json preserved, firstmate's wiring armed in place ==
+-- store copy (creator's original):
+{"creator":"mac-mini-captain"}
+-- live copy now armed by firstmate (first 3 lines):
+{"creator":"mac-mini-captain"}
+
+== an unrelated session of the creator is working in that copy ==
+unrelated pid 51485 alive: yes
+
+== work lands on origin, then teardown ==
+teardown: leaving process(es) running under adopted worktree /private/var/folders/9v/wy94xzb539d3qcwkmzqnskrm0000gn/T/adopt-lane.bncwjc/project/.claude/worktrees/issue-7 for issue-7 untouched: 51485
+/var/folders/9v/wy94xzb539d3qcwkmzqnskrm0000gn/T/adopt-lane.bncwjc/project: already current
+teardown issue-7 complete (window firstmate:fm-issue-7; adopted worktree /private/var/folders/9v/wy94xzb539d3qcwkmzqnskrm0000gn/T/adopt-lane.bncwjc/project/.claude/worktrees/issue-7 left in place for its creator, with any process still running in it untouched)
+Backlog: issue-7 just finished (this home keeps no markdown backlog at /private/var/folders/9v/wy94xzb539d3qcwkmzqnskrm0000gn/T/adopt-lane.bncwjc/home/data/backlog.md). Update /private/var/folders/9v/wy94xzb539d3qcwkmzqnskrm0000gn/T/adopt-lane.bncwjc/home/data/backlog.md - move issue-7 to Done, keep Done to the 10 most recent, then re-scan Queued and dispatch only work whose blockers are gone and date is due.
+teardown exit: 0
+
+== after teardown ==
+copy still present: yes
+branch still checked out: issue-7
+creator's settings.local.json byte-identical: yes
+owner claim released: yes
+preserve store removed: yes
+unrelated creator process still alive: yes
+treehouse return calls: 0
