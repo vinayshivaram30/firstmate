@@ -1,0 +1,7 @@
+== BEFORE (probe libs reverted to base, no bound): watcher vs a remote host that hangs inside the remote command ==
+-- watcher pid 62152 alive: yes
+-- heartbeat age after 25s of a hung host: 25s
+-- state/.watch-triage.log:
+(none)
+-- ssh probe invocations: 1
+-- leaked ssh/proxy pids after the watcher is stopped: none

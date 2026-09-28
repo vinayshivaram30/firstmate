@@ -1,0 +1,9 @@
+== AFTER (target 7219a4e, bound=5s): watcher vs a remote host that hangs inside the remote command ==
+-- watcher pid 79885 alive: yes
+-- heartbeat age after 25s of a hung host: 4s
+-- state/.watch-triage.log:
+[2026-09-28T18:13:43+0530] secondmate rsm1 liveness: remote state probe exceeded its 5s bound; endpoint state unknown; route preserved on lab-host
+[2026-09-28T18:13:50+0530] secondmate rsm1 liveness: remote state probe exceeded its 5s bound; endpoint state unknown; route preserved on lab-host
+[2026-09-28T18:13:57+0530] secondmate rsm1 liveness: remote state probe exceeded its 5s bound; endpoint state unknown; route preserved on lab-host
+-- ssh probe invocations: 4
+-- leaked ssh/proxy pids after the watcher is stopped: none
