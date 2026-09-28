@@ -1,0 +1,22 @@
+=== creator's own .claude/settings.local.json before the dispatch ===
+{"creator":"do not touch"}
+sha: f1da7d061dcb4d069522dcc1cfad115bc7df581e
+
+=== dispatch adopts the copy ===
+warning: /var/folders/9v/wy94xzb539d3qcwkmzqnskrm0000gn/T//fm-lab3.uRSfUq/data/issue-9/launch-brief.md records no delivery contract line (scaffolded before ship briefs recorded one); launching on the explicit --mode no-mistakes - confirm its definition of done matches
+spawned issue-9 harness=claude kind=ship mode=no-mistakes yolo=off window=firstmate:fm-issue-9 worktree=/private/var/folders/9v/wy94xzb539d3qcwkmzqnskrm0000gn/T/fm-lab3.uRSfUq/offerline/.claude/worktrees/issue-9
+
+=== during the task firstmate has armed its own settings in that copy ===
+{"hooks":{"UserPromptSubmit":[{"hooks":[{"type":"command","command":"'/Users/light/.no-mistakes/worktrees/fb81fccc182e/01M3KZGBAB4CQRCTGDJ7VHR0BQ/bin/fm-busy-event.sh' apply '/private/var/folders/9v/wy94xzb539d3qcwkmzqnskrm0000gn/T/fm-lab3.uRSfUq/state' 'issue-9' busy --gen 'g1790610593.41171.7725' --source claude-hook --event user-prompt-submit 2>/dev/null || true"}]}],"Stop":[{"hooks":[{"type":"command","command":"touch '/private/var/folders/9v/wy94xzb539d3qcwkmzqnskrm0000gn/T/fm-lab3.uRSfUq/state/issue-9.turn-ended'; '/Users/light/.no-mistakes/worktrees/fb81fccc182e/01M3KZGBAB4CQRCTGDJ7VHR0BQ/bin/fm-busy-event.sh' apply '/private/var/folders/9v/wy94xzb539d3qcwkmzqnskrm0000gn/T/fm-lab3.uRSfUq/state' 'issue-9' idle --gen 'g1790610593.41171.7725' --source claude-hook --event stop 2>/dev/null || true"}]}],"StopFailure":[{"hooks":[{"type":"command","command":"'/Users/light/.no-mistakes/worktrees/fb81fccc182e/01M3KZGBAB4CQRCTGDJ7VHR0BQ/bin/fm-busy-event.sh' apply '/private/var/folders/9v/wy94xzb539d3qcwkmzqnskrm0000gn/T/fm-lab3.uRSfUq/state' 'issue-9' idle --gen 'g1790610593.41171.7725' --source claude-hook --event stop-failure 2>/dev/null || true"}]}],"SessionEnd":[{"hooks":[{"type":"command","command":"'/Users/light/.no-mistakes/worktrees/fb81fccc182e/01M3KZGBAB4CQRCTGDJ7VHR0BQ/bin/fm-busy-event.sh' apply '/private/var/folders/9v/wy94xzb539d3qcwkmzqnskrm0000gn/T/fm-lab3.uRSfUq/state' 'issue-9' idle --gen 'g1790610593.41171.7725' --source claude-hook --event session-end 2>/dev/null || true"}]}]}}
+sha: 19fc870796e38c8ee631f0b5847aca8114ca9e10
+
+=== worker lands the ticket work, operator tears down ===
+/var/folders/9v/wy94xzb539d3qcwkmzqnskrm0000gn/T/fm-lab3.uRSfUq/offerline: already current
+teardown issue-9 complete (window firstmate:fm-issue-9; adopted worktree /private/var/folders/9v/wy94xzb539d3qcwkmzqnskrm0000gn/T/fm-lab3.uRSfUq/offerline/.claude/worktrees/issue-9 left in place for its creator)
+
+=== the copy handed back to its creator ===
+{"creator":"do not touch"}
+sha now: f1da7d061dcb4d069522dcc1cfad115bc7df581e  (before dispatch: f1da7d061dcb4d069522dcc1cfad115bc7df581e)
+/private/var/folders/9v/wy94xzb539d3qcwkmzqnskrm0000gn/T/fm-lab3.uRSfUq/offerline                           504608d [main]
+/private/var/folders/9v/wy94xzb539d3qcwkmzqnskrm0000gn/T/fm-lab3.uRSfUq/offerline/.claude/worktrees/issue-9 0aca7cc [fm/issue-9]
+treehouse pool calls: none

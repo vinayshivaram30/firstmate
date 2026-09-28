@@ -1,0 +1,20 @@
+=== operator tears the task down after the ticket work landed ===
+$ bin/fm-teardown.sh issue-7
+/var/folders/9v/wy94xzb539d3qcwkmzqnskrm0000gn/T/fm-lab.FzpFZA/offerline: already current
+teardown issue-7 complete (window firstmate:fm-issue-7; adopted worktree /private/var/folders/9v/wy94xzb539d3qcwkmzqnskrm0000gn/T/fm-lab.FzpFZA/offerline/.claude/worktrees/issue-7 left in place for its creator)
+Backlog: issue-7 just finished (this home keeps no markdown backlog at /private/var/folders/9v/wy94xzb539d3qcwkmzqnskrm0000gn/T/fm-lab.FzpFZA/data/backlog.md). Update /private/var/folders/9v/wy94xzb539d3qcwkmzqnskrm0000gn/T/fm-lab.FzpFZA/data/backlog.md - move issue-7 to Done, keep Done to the 10 most recent, then re-scan Queued and dispatch only work whose blockers are gone and date is due.
+(exit 0)
+
+=== the creator's copy after teardown ===
+/private/var/folders/9v/wy94xzb539d3qcwkmzqnskrm0000gn/T/fm-lab.FzpFZA/offerline                           3d167b4 [main]
+/private/var/folders/9v/wy94xzb539d3qcwkmzqnskrm0000gn/T/fm-lab.FzpFZA/offerline/.claude/worktrees/issue-7 a0ea79f [fm/issue-7]
+shasum: /var/folders/9v/wy94xzb539d3qcwkmzqnskrm0000gn/T//fm-lab.FzpFZA/offerline/.claude/worktrees/issue-7/.claude/settings.local.json: No such file or directory
+settings.local.json sha now:   (before: f70ab7363ed87a196f0469e11013cbbbe96f57ca)
+firstmate wiring left behind: 0
+
+=== treehouse invocations during teardown (real binary on PATH) ===
+(none - the copy was never returned to a pool)
+
+=== task record removed ===
+ls: /var/folders/9v/wy94xzb539d3qcwkmzqnskrm0000gn/T//fm-lab.FzpFZA/state/issue-7.meta: No such file or directory
+(record gone)

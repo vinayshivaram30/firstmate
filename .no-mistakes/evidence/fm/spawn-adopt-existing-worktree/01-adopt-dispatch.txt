@@ -1,0 +1,11 @@
+=== offerline charter claim the crew already made ===
+$ git worktree add .claude/worktrees/issue-7 -b issue-7
+/private/var/folders/9v/wy94xzb539d3qcwkmzqnskrm0000gn/T/fm-lab.FzpFZA/offerline                           3d167b4 [main]
+/private/var/folders/9v/wy94xzb539d3qcwkmzqnskrm0000gn/T/fm-lab.FzpFZA/offerline/.claude/worktrees/issue-7 3d167b4 [issue-7]
+
+=== operator dispatches ticket #7 into that claimed copy ===
+$ bin/fm-spawn.sh issue-7 <project> --mode no-mistakes --yolo off --adopt-worktree <project>/.claude/worktrees/issue-7
+warning: /var/folders/9v/wy94xzb539d3qcwkmzqnskrm0000gn/T//fm-lab.FzpFZA/data/issue-7/launch-brief.md records no ship branch; defaulting to legacy branch fm/issue-7
+warning: /var/folders/9v/wy94xzb539d3qcwkmzqnskrm0000gn/T//fm-lab.FzpFZA/data/issue-7/launch-brief.md records no delivery contract line (scaffolded before ship briefs recorded one); launching on the explicit --mode no-mistakes - confirm its definition of done matches
+spawned issue-7 harness=claude kind=ship mode=no-mistakes yolo=off window=firstmate:fm-issue-7 worktree=/private/var/folders/9v/wy94xzb539d3qcwkmzqnskrm0000gn/T/fm-lab.FzpFZA/offerline/.claude/worktrees/issue-7
+(exit 0)

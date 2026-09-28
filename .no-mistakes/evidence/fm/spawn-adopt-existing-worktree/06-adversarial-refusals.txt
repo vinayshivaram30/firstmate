@@ -1,0 +1,21 @@
+=== adversarial: adopt the shared primary checkout instead of a ticket copy ===
+error: --adopt-worktree did not yield an isolated worktree (resolved '/private/var/folders/9v/wy94xzb539d3qcwkmzqnskrm0000gn/T/fm-lab3.uRSfUq/offerline': it is the spawning project itself; worktree root '/private/var/folders/9v/wy94xzb539d3qcwkmzqnskrm0000gn/T/fm-lab3.uRSfUq/offerline'; spawning project '/var/folders/9v/wy94xzb539d3qcwkmzqnskrm0000gn/T/fm-lab3.uRSfUq/offerline'); refusing to launch to avoid tangling the primary checkout. Inspect target /private/var/folders/9v/wy94xzb539d3qcwkmzqnskrm0000gn/T/fm-lab3.uRSfUq/offerline
+(exit 1)
+
+=== adversarial: adopt a ticket copy that has uncommitted work in it ===
+error: adopted worktree '/private/var/folders/9v/wy94xzb539d3qcwkmzqnskrm0000gn/T/fm-lab3.uRSfUq/offerline/.claude/worktrees/issue-11' is not clean: it has uncommitted changes; refusing to discard uncommitted work and leaving the copy untouched
+(exit 1)
+
+=== adversarial: adopt a path that is not a worktree at all ===
+error: adopted worktree '/var/folders/9v/wy94xzb539d3qcwkmzqnskrm0000gn/T//fm-lab3.uRSfUq/offerline/nope' does not exist or is not a readable directory
+(exit 1)
+
+=== adversarial: --adopt-worktree on a relaunch (no first-dispatch semantics) ===
+error: --adopt-worktree applies only to a first ship or scout dispatch; a relaunch reuses the task's recorded worktree and a secondmate runs in its own home
+(exit 1)
+
+=== the creator's uncommitted work in the refused copy is untouched ===
+A  scratch.txt
+=== no task record was published by any refusal ===
+ls: /var/folders/9v/wy94xzb539d3qcwkmzqnskrm0000gn/T//fm-lab3.uRSfUq/state/issue-11.meta: No such file or directory
+(none)
